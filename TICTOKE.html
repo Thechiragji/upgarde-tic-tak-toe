@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Chirag Tic-Tac-Toe</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="app-header">
+      <h1>Chirag Tic-Tac-Toe</h1>
+      <p class="subtitle">Clean • Fast • Mobile Friendly</p>
+    </header>
+
+    <section class="top-bar">
+      <div class="mode-toggle">
+        <label>
+          <input type="radio" name="mode" value="pvp" checked />
+          Player vs Player
+        </label>
+        <label>
+          <input type="radio" name="mode" value="ai" />
+          Player vs Computer
+        </label>
+      </div>
+      <div class="current-player">
+        Turn: <span id="currentPlayer">X</span>
+      </div>
+    </section>
+
+    <main class="game-area">
+      <div class="board" id="board">
+        <button class="cell" data-index="0"></button>
+        <button class="cell" data-index="1"></button>
+        <button class="cell" data-index="2"></button>
+        <button class="cell" data-index="3"></button>
+        <button class="cell" data-index="4"></button>
+        <button class="cell" data-index="5"></button>
+        <button class="cell" data-index="6"></button>
+        <button class="cell" data-index="7"></button>
+        <button class="cell" data-index="8"></button>
+      </div>
+
+      <aside class="sidebar">
+        <div class="score-card">
+          <h2>Score</h2>
+          <div class="score-row">
+            <span>X Wins</span>
+            <strong id="scoreX">0</strong>
+          </div>
+          <div class="score-row">
+            <span>O Wins</span>
+            <strong id="scoreO">0</strong>
+          </div>
+          <div class="score-row">
+            <span>Draws</span>
+            <strong id="scoreDraw">0</strong>
+          </div>
+        </div>
+
+        <div class="controls">
+          <p id="status">Game start! X begins.</p>
+          <button id="restartBtn" class="primary-btn">Restart Game</button>
+        </div>
+      </aside>
+    </main>
+
+    <footer class="app-footer">
+      <span>Made by Chirag</span>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
